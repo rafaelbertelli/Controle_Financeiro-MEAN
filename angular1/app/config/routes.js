@@ -2,13 +2,12 @@ angular.module('primeiraApp').config([
     '$stateProvider',
     '$urlRouterProvider',
     function($stateProvider, $urlRouterProvider) {
-        $stateProvider.state('dashboard', {
-            url: '/dashboard',
-            templateurl: 'dashboard/dashboard.html'
-        })
-        .state('billingCycle', {
-            url: '/billingCycle',
-            template: 'billingCycle/tabs.html'
+        $stateProvider.state("dashboard", {
+            url: "/dashboard",
+            templateUrl: "dashboard/dashboard.html"
+        }).state("billingCycle", {
+            url: "/billingCycles",
+            templateUrl: "billingCycle/tabs.html"
         })
         
         $urlRouterProvider.otherwise('/dashboard')
