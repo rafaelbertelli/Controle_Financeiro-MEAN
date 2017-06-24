@@ -1,5 +1,13 @@
+html, body {
+	height: 100%;
+}
+
+html {
+	background-color: #ECF0F5;
+}
+
 .main-footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
 }
