@@ -12,9 +12,4 @@
 	})
 })()
 
-
-
-
-	// protocolo  240620174232152
-	// os  8a34b45edb151
-	// 10315
+// <content-header name="" small=""></content-deader>

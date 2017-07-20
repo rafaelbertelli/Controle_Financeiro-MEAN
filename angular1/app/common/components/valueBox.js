@@ -1,6 +1,5 @@
 (function(){
 	angular.module('primeiraApp').component('valueBox', {
-
 		bindings: {
 			grid: '@',
 			colorClass: '@',
