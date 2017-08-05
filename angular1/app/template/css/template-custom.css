@@ -11,3 +11,7 @@ html {
 	bottom: 0;
 	width: 100%;
 }
+
+#toast-container {
+	top: 70px;
+}

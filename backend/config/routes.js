@@ -15,4 +15,4 @@
 		router.route('/billingSummary').get(billingSummaryService.getSummary)
 
 	}
-})()
+}())

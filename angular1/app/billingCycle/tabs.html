@@ -1,7 +1,7 @@
 <content-header name="Ciclo de pagamentos" small=" Cadastro"></content-header>
 
 <section class="content">
-	<div class="nav-tabs-custom">
+	<div class="nav-tabs-custom" ng-controller="BillingCycleCtrl as bcCtrl">
 		<ul class="nav nav-tabs">
 			<li><a data-target="#tabList" data-toggle="tab"><i class="fa fa-bars"></i> Lista</a></li>
 			<li><a data-target="#tabCreate" data-toggle="tab"><i class="fa fa-plus"></i> Incluir</a></li>
@@ -15,5 +15,6 @@
 			<div class="tab-pane" id="tabUpdate" ng-include="'billingCycle/form.html'"></div>
 			<div class="tab-pane" id="tabDelete" ng-include="'billingCycle/form.html'"></div>
 		</div>
-	</div>
+
+</div>
 </section>

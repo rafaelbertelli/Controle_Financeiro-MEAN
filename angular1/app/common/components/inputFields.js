@@ -5,7 +5,8 @@
 			type: '@',
 			id: '@',
 			label: '@',
-			placeholder: '@'
+			placeholder: '@',
+			model: '=',
 		},
 		controller: [
 			'gridSystem',
@@ -19,11 +20,12 @@
 			<div class="{{ $ctrl.gridClass }}">
 				<div class="form-group">
 				<label for="{{ $ctrl.id }}">{{ $ctrl.label }}</label>
-					<input type="{{ $ctrl.type }}" id="{{ $ctrl.id }}" class="form-control" placeholder="{{ $ctrl.placeholder }}" />
+					<input type="{{ $ctrl.type }}" id="{{ $ctrl.id }}" class="form-control" 
+						placeholder="{{ $ctrl.placeholder }}" ng-model="$ctrl.model"/>
 				</div>
 			</div>
 		`
 	})
 })()
 
-// <input-field grid="" type="" id="" label="" placeholder=""></input-field>
+// <input-field grid="" type="" id="" label="" placeholder="" model="bcCtrl.billingCycle.name"></input-field>

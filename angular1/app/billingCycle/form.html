@@ -1,9 +1,16 @@
 <div role="form">
-	<div class="box-body" ng-controller="DashboardCtrl as dashboard">
-		<input-field grid="12 4" type="text" id="nome" label="Nome" placeholder="Digite o nome"></input-field>
-		<input-field grid="12 2" type="number" id="mes" label="Mês" placeholder="Digite o mês"></input-field>
-		<input-field grid="12 2" type="number" id="ano" label="Ano" placeholder="Digite o ano"></input-field>
-
-
+	<div class="box-body">
+		<input-field grid="12 4" type="text" id="name" label="Nome" placeholder="Digite o nome" model="bcCtrl.billingCycle.name"></input-field>
+		<input-field grid="12 2" type="number" id="month" label="Mês" placeholder="Digite o mês" model="bcCtrl.billingCycle.month"></input-field>
+		<input-field grid="12 2" type="number" id="year" label="Ano" placeholder="Digite o ano" model="bcCtrl.billingCycle.year"></input-field>
+		
 	</div>
+
+	<div class="box-footer">
+		<button class="btn btn-success" ng-click="bcCtrl.create()">Incluir</button>
+		<button class="btn btn-info" ng-click="">Alterar</button>
+		<button class="btn btn-danger" ng-click="">Excluir</button>
+		<button class="btn btn-default" ng-click="">Cancelar</button>
+	</div>
+	
 </div>
