@@ -1,6 +1,6 @@
 (function(){
-
-	angular.module('primeiraApp').factory('msgs', [
+	
+	angular.module('controleFinanceiro').factory('msgs', [
 		'toastr',
 		MsgsFactory
 	])
@@ -24,5 +24,6 @@
 
 		return { addSuccess, addError }
 	}
+
 
 })()

@@ -1,5 +1,5 @@
 (function(){
-	angular.module('primeiraApp', [
+	angular.module('controleFinanceiro', [
 		'ui.router',
 		'ngAnimate',
 		'toastr'

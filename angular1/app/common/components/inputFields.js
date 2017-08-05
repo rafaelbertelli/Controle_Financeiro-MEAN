@@ -1,5 +1,5 @@
 (function() {
-	angular.module('primeiraApp').component('inputField', {
+	angular.module('controleFinanceiro').component('inputField', {
 		bindings: {
 			grid: '@',
 			type: '@',

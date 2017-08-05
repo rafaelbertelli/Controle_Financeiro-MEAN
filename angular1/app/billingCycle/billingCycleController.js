@@ -1,5 +1,5 @@
 (function() {
-	angular.module('primeiraApp').controller('BillingCycleCtrl', [
+	angular.module('controleFinanceiro').controller('BillingCycleCtrl', [
 		'$http',
 		'msgs',
 		BillingCycleController
@@ -9,10 +9,18 @@
 		const vm = this
 		const url = 'http://localhost:3003/api/billingCycles'
 
+		vm.refresh = function() {
+			$http.get(url).then(function(response) {
+				vm.billingCycle = {}
+				vm.billingCycles = response
+
+			})
+		}
+
 		vm.create = function() {
 
 			$http.post(url, vm.billingCycle).then(function(response) {
-				vm.billingCycle = {}
+				vm.refresh()
 				msgs.addSuccess('Operação realizada com sucesso!')
 
 			}).catch(function(response) {
@@ -21,6 +29,8 @@
 			})
 
 		}
+
+		vm.refresh()
 	}
 
 })()

@@ -1,5 +1,5 @@
 (function(){
-	angular.module('primeiraApp').component('valueBox', {
+	angular.module('controleFinanceiro').component('valueBox', {
 		bindings: {
 			grid: '@',
 			colorClass: '@',
