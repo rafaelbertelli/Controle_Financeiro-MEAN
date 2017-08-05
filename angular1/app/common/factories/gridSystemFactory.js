@@ -1,5 +1,5 @@
 (function() {
-	angular.module('controleFinanceiro').factory('gridSystem', [ function() {
+	angular.module('primeiraApp').factory('gridSystem', [ function() {
 
 		function toCssClass(numbers) {
 			const cols = numbers ? numbers.split(' ') : []

@@ -1,6 +1,6 @@
 (function(){
 	
-	angular.module('controleFinanceiro').factory('msgs', [
+	angular.module('primeiraApp').factory('msgs', [
 		'toastr',
 		MsgsFactory
 	])

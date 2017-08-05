@@ -1,5 +1,5 @@
 (function(){
-	angular.module('controleFinanceiro').component('contentHeader', {
+	angular.module('primeiraApp').component('contentHeader', {
 		bindings: {
 			name: '@',
 			small: '@',

@@ -1,3 +1,4 @@
+/* Core */
 html, body {
 	height: 100%;
 }
@@ -6,12 +7,19 @@ html {
 	background-color: #ECF0F5;
 }
 
+/* Roda pé */
 .main-footer {
 	position: fixed;
 	bottom: 0;
 	width: 100%;
 }
 
+/* Toastr */
 #toast-container {
 	top: 70px;
+}
+
+/* Tabelas */
+.table-actions {
+	width: 140px;
 }

@@ -1,5 +1,5 @@
 (function(){
-	angular.module('controleFinanceiro').config([
+	angular.module('primeiraApp').config([
 		'$stateProvider',
 		'$urlRouterProvider',
 		function($stateProvider, $urlRouterProvider) {
