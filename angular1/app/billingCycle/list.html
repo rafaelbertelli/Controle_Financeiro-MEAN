@@ -10,23 +10,16 @@
 				</tr>
 			</thead>
 			<tbody>
-				<tr ng-repeat="billingCycle in bcCtrl.billingCycles">
-					<td>{{ billingCycle.name }}</td>
-					<td>{{ billingCycle.month }}</td>
-					<td>{{ billingCycle.year }}</td>
+				<tr ng-repeat="billingCycleAtual in bcCtrl.billingCycles">
+					<td class="v-center">{{ billingCycleAtual.name }}</td>
+					<td class="v-center">{{ billingCycleAtual.month }}</td>
+					<td class="v-center">{{ billingCycleAtual.year }}</td>
 					<td class="table-actions">
-						<a class="btn btn-warning" title="Editar" text="edit" value="jkkj"><i class="fa fa-pencil"></i></a>
-						<button class="btn btn-danger" title="Excluir"><i class="fa fa-times"></i></button>
+						<button class="btn btn-warning" title="Editar" ng-click="bcCtrl.showTabUpdate(billingCycleAtual)"><i class="fa fa-pencil"></i></button>
+						<button class="btn btn-danger" title="Excluir" ng-click="bcCtrl.showTabDelete(billingCycleAtual)"><i class="fa fa-times"></i></button>
 					</td>
 				</tr>
 			</tbody>
 		</table>
 	</div>
-	<!-- /.table-responsive -->
 </div>
-<!-- /.box-body -->
-<div class="box-footer clearfix">
-	<a href="javascript:void(0)" class="btn btn-sm btn-info btn-flat pull-left">Place New Order</a>
-	<a href="javascript:void(0)" class="btn btn-sm btn-default btn-flat pull-right">View All Orders</a>
-</div>
-<!-- /.box-footer -->

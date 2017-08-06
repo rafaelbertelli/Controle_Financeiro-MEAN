@@ -23,3 +23,6 @@ html {
 .table-actions {
 	width: 140px;
 }
+.v-center {
+	vertical-align: middle !important;
+}
