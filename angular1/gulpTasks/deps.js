@@ -23,7 +23,7 @@ gulp.task('deps.js', function() {
 
 gulp.task('deps.css', function() {
     gulp.src([
-        'node_modules/angular-toastr/dist/angular-toastr.tpls.min.css',
+        'node_modules/angular-toastr/dist/angular-toastr.min.css',
         'node_modules/font-awesome/css/font-awesome.min.css',
         'node_modules/admin-lte/bootstrap/css/bootstrap.min.css',
         'node_modules/admin-lte/dist/css/AdminLTE.min.css',
