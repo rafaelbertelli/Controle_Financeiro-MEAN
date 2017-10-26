@@ -3,7 +3,21 @@
 		<input-field grid="12 4" type="text" id="name" label="Nome" placeholder="Digite o nome" model="bcCtrl.billingCycle.name" readonly="bcCtrl.tabDelete"></input-field>
 		<input-field grid="12 4" type="number" id="month" label="Mês" placeholder="Digite o mês" model="bcCtrl.billingCycle.month" readonly="bcCtrl.tabDelete"></input-field>
 		<input-field grid="12 4" type="number" id="year" label="Ano" placeholder="Digite o ano" model="bcCtrl.billingCycle.year" readonly="bcCtrl.tabDelete"></input-field>
-		
+
+		<div class="col-xs-12 col-sm-6">
+			<fieldset>
+				<legend>Créditos</legend>
+				<div ng-include="'billingCycle/creditList.html'"></div>
+			</fieldset>
+		</div>
+		<div class="col-xs-12 col-sm-6">
+				<fieldset>
+					<legend>Débitos</legend>
+					<div ng-include="'billingCycle/debtList.html'"></div>
+				</fieldset>
+			</div>
+
+
 	</div>
 
 	<div class="box-footer">

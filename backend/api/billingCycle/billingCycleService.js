@@ -20,7 +20,7 @@ function sendErrorsOrNext(req, res, next) {
 function parseErrors(nodeRestfulErrors) {
   const errors = []
   _.forIn(nodeRestfulErrors, error => errors.push(error.message))
-  return errors
+  return errors;
 }
 
 BillingCycle.route('count', function(req, res, next) {
